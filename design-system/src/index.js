@@ -7,5 +7,7 @@
 export { default as GlobalStyle } from "./global.js";
 
 
+export { default as Avatar } from "./components/Avatar";
 export { default as Button } from "./components/Button";
 export { default as Icon } from "./components/Icon";
+export { default as TopBox } from "./components/TopBox";

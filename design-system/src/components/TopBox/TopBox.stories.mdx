@@ -1,0 +1,27 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { config } from "storybook-addon-designs";
+
+import TopBox from ".";
+
+<Meta title="Components/TopBox" />
+
+## TopBox
+
+TODO: add component description
+
+<Canvas>
+  <Story
+      name="Default"
+      parameters={{
+          // Configuration for design plugin, which allows to display linked Figma frame
+          design: config({
+              type: "figma",
+              // replace this url with your own design file to link:
+              url: "https://www.figma.com/file/KnHAhqIZXLy9EcZ0DrRYvY/Workshop-design-file-PY-Jey-Aurore?node-id=113%3A3213",
+          }),
+      }}
+  >
+    <TopBox/>
+  </Story>
+</Canvas>
