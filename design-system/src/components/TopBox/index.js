@@ -11,7 +11,7 @@ import Icon from "../Icon";
  */
 const TopBox = ({ title, ...props }) => {
   return <StyledTopBox>
-    <div style={{ marginBottom: 40, display: 'flex', 'justify-content': 'space-between' }}>
+    <div style={{ marginBottom: 40, display: 'flex', justifyContent: 'space-between' }}>
       <StyledAvatar />
       <Button label={ <Icon name={'menu'} />} isOutline={ true }/>
     </div>
@@ -19,9 +19,6 @@ const TopBox = ({ title, ...props }) => {
   </StyledTopBox>;
 };
 
-export const StyledTopBox = styled.div`
-  width: 375px;
-  margin: 0 auto;
-`;
+export const StyledTopBox = styled.div``;
 
 export default TopBox;
