@@ -1,7 +1,8 @@
 
 import React from "react";
 import styled from "styled-components";
-import {Button, Icon} from "../../../dist/design-system";
+import Button from "../Button";
+import Icon from "../Icon";
 
 /* TopBarDetails
  *
