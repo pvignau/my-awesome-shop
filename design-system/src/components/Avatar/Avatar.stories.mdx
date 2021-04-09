@@ -21,7 +21,8 @@ TODO: add component description
               url: "https://www.figma.com/file/KnHAhqIZXLy9EcZ0DrRYvY/Workshop-design-file-PY-Jey-Aurore?node-id=113%3A3215",
           }),
       }}
+      args={{imageSrc: "https://via.placeholder.com/48", alt: "Avatar"}}
   >
-    <Avatar/>
+    {(args) => <Avatar {...args} />}
   </Story>
 </Canvas>
