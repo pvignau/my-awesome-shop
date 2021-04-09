@@ -21,9 +21,12 @@ TODO: add component description
               url: "https://www.figma.com/file/KnHAhqIZXLy9EcZ0DrRYvY/Workshop-design-file-PY-Jey-Aurore?node-id=113%3A3213",
           }),
       }}
+      args={{title: "My test title", avatarSrc: "https://via.placeholder.com/48", avatarAlt: "Avatar"}}
   >
-    <div style={{ width: 375, margin: '0 auto' }}>
-        <TopBox/>
-    </div>
+    {args => (
+        <div style={{ width: 375, margin: '0 auto' }}>
+            <TopBox {...args} />
+        </div>
+    )}
   </Story>
 </Canvas>

@@ -7,11 +7,11 @@ import styled from "styled-components";
  *
  * TODO: add component description
  */
-const Avatar = (props) => {
-  return <StyledAvatar><img src="https://via.placeholder.com/48"  alt="avatar image" /></StyledAvatar>;
+const Avatar = ({imageSrc, alt}) => {
+  return <StyledAvatar><img src={imageSrc}  alt={alt} /></StyledAvatar>;
 };
 
-export const StyledAvatar = styled.div`
+const StyledAvatar = styled.div`
   box-sizing: border-box;
   position: relative;
   border-radius: 12px;
