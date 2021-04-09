@@ -22,7 +22,7 @@ const StyledButton = styled.button`
   position: relative;
   user-select: none;
   text-decoration: none;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: ${(p) => (p.label ? "16px" : "12px")};
   background-color: ${(p) => (p.isOutline ? "transparent" : p.color)};
   opacity: ${(p) => (p.disabled ? 0.6 : 1)};
