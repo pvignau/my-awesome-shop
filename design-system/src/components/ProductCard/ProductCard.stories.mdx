@@ -1,0 +1,33 @@
+
+import { Meta, Canvas, Story, Preview } from '@storybook/addon-docs/blocks';
+import { config } from "storybook-addon-designs";
+import styled from "styled-components";
+
+import ProductCard from ".";
+import item1Img from "product/src/assets/item1.png";
+
+
+<Meta title="Components/ProductCard" />
+
+## ProductCard
+
+TODO: add component description
+
+<Canvas>
+  <Story
+    name="Default"
+    parameters={{
+      // Configuration for design plugin, which allows to display linked Figma frame
+      design: config({
+        type: "figma",
+        // replace this url with your own design file to link:
+        url:
+          "https://www.figma.com/file/KnHAhqIZXLy9EcZ0DrRYvY/Workshop-design-file-PY-Jey-Aurore?node-id=113%3A3209",
+      }),
+    }}
+    // Props values for the story
+    args={{ imageSrc: item1Img, name: "Nike Air Force 1 '07", price: "€95.00" }}
+    >
+    {(args) => <div style={{width: "136px"}}><ProductCard {...args} /></div>}
+  </Story>
+</Canvas>
