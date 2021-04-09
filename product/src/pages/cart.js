@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon } from "design-system";
+import {Button, Icon, TopBox} from "design-system";
 
 import avatarImg from "../assets/avatar.png";
 import item1Img from "../assets/item1.png";
@@ -13,24 +13,8 @@ const StyledDiv1 = styled.div`
   padding: 64px 40px;
 `;
 
-const StyledImage = styled.img`
-  width: 48px;
-  height: 48px;
-  display: block;
-`;
-
-const Styledh1 = styled.h1`
-  margin-bottom: 40px;
-  letter-spacing: -1.6px;
-`;
-
-const StyledDiv2 = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-`;
-
 const StyledDiv3 = styled.div`
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 `;
@@ -94,13 +78,7 @@ const Cart = () => {
   return (
     <div>
       <StyledDiv1>
-        <StyledDiv2>
-          <StyledImage src={avatarImg} />
-          <Button isOutline>
-            <Icon name="menu" />
-          </Button>
-        </StyledDiv2>
-        <Styledh1>Shopping Cart</Styledh1>
+        <TopBox avatarSrc={avatarImg} avatarAlt={'AI'} title={'Shopping Cart'} />
 
         <StyledDiv3>
           <StyledImg src={item1Img} alt="" />

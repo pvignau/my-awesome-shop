@@ -17,6 +17,7 @@ const StyledDiv1 = styled.div`
 `;
 
 const StyledDiv3 = styled.div`
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
