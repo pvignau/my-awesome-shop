@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button, Icon, ProductCardDetails } from "design-system";
 import itemImg from "../assets/item1.png";
+import {TopBarDetails} from "design-system/src";
 
 const StyledDiv1 = styled.div`
   padding: 64px 40px;
@@ -27,6 +28,7 @@ const Details = () => {
   return (
     <div>
       <StyledDiv1>
+        <TopBarDetails title={'My product name'} />
         <StyledDiv2>
           <Button isOutline>
             <Icon name="arrowBack" />
