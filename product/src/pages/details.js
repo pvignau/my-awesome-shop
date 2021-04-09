@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, Icon, ProductCardDetails, TopBarDetails } from "design-system";
+import { colors as themeColors } from "tokens";
 import itemImg from "../assets/item1.png";
 
 const StyledDiv1 = styled.div`
@@ -38,7 +39,7 @@ const Details = () => {
         </StyledDiv2>
         <StyledDiv4>
           <ProductCardDetails imageSrc={itemImg} name={`Nike Air Force 1\u00A0'07\u00A0LX`} price="€95.00" category=" Men's Shoe" />
-          <Button>Add to Cart</Button>
+          <Button color={themeColors.primaryGreen100}>Add to Cart</Button>
         </StyledDiv4>
       </StyledDiv1>
     </div>
