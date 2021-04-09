@@ -8,7 +8,9 @@ import styled from "styled-components";
  * TODO: add component description
  */
 const Avatar = ({imageSrc, alt}) => {
-  return <StyledAvatar><img src={imageSrc}  alt={alt} /></StyledAvatar>;
+  return <StyledAvatar>
+    <StyledImg src={imageSrc}  alt={alt} />
+  </StyledAvatar>;
 };
 
 const StyledAvatar = styled.div`
@@ -19,6 +21,11 @@ const StyledAvatar = styled.div`
   width: 48px;
   height: 48px;
   overflow: hidden;
+`;
+
+const StyledImg = styled.img`
+  width: 48px;
+  height: 48px;
 `;
 
 export default Avatar;
