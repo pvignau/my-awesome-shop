@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button"
 import Icon from "../Icon"
+import { colors as themeColors } from "tokens";
 
 const StyledDiv5 = styled.div`
   border-radius: 32px;
@@ -34,7 +35,7 @@ const Styledh1 = styled.h1`
 `;
 
 const Styledh2 = styled.h2`
-  color: #f15223;
+  color: ${themeColors.primaryGreen100};
   margin-bottom: 40px;
 `;
 

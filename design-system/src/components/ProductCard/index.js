@@ -1,13 +1,14 @@
 
 import React from "react";
 import styled from "styled-components";
+import { colors as themeColors } from "tokens";
 
 const StyledProductImage = styled.img`
   max-width: 100%;
   margin-bottom: 16px;
 `;
 const StyledProductPrice = styled.p`
-  color: #f15223;
+  color: ${themeColors.primaryGreen100};
   font-weight: 700;
   margin-top: 8px;`;
 
