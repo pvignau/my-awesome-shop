@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon } from "design-system";
+import { Button, Icon, ProductCard } from "design-system";
 
 import avatarImg from "../assets/avatar.png";
 import item1Img from "../assets/item1.png";
@@ -48,21 +48,11 @@ const StyledDiv5 = styled.div`
   gap: 32px 24px;
 `;
 
-const StyledDiv6 = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const StyledBorder = styled.div`
   width: 1px;
   height: 16px;
   background-color: rgba(0, 0, 0, 0.1);
   margin: 0 8px;
-`;
-
-const StyledImg = styled.img`
-  max-width: 100%;
-  margin-bottom: 16px;
 `;
 
 const StyledButton = styled(Button)`
@@ -72,12 +62,6 @@ const StyledButton = styled(Button)`
   &:last-child {
     margin-right: 0;
   }
-`;
-
-const StyledP = styled.p`
-  color: #f15223;
-  font-weight: 700;
-  margin-top: 8px;
 `;
 
 const Home = () => {
@@ -109,26 +93,10 @@ const Home = () => {
           </StyledDiv4>
         </StyledDiv3>
         <StyledDiv5>
-          <StyledDiv6>
-            <StyledImg src={item1Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item2Img} alt="" />
-            <h4>Nike Air Shadow Force</h4>
-            <StyledP>€105.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item3Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
-          <StyledDiv6>
-            <StyledImg src={item4Img} alt="" />
-            <h4>Nike Air Force 1 '07</h4>
-            <StyledP>€95.00</StyledP>
-          </StyledDiv6>
+          <ProductCard imageSrc={item1Img} name="Nike Air Force 1 '07" price="€95.00" />
+          <ProductCard imageSrc={item2Img} name="Nike Air Shadow Force" price="€105.00" />
+          <ProductCard imageSrc={item3Img} name="Nike Air Force 1 '07" price="€95.00" />
+          <ProductCard imageSrc={item4Img} name="Nike Air Force 1 '07" price="€95.00" />
         </StyledDiv5>
       </StyledDiv1>
     </div>
