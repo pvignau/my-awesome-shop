@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon, ProductCardDetails } from "design-system";
+import { Button, Icon, ProductCardDetails, TopBarDetails } from "design-system";
 import { colors as themeColors } from "tokens";
 import itemImg from "../assets/item1.png";
 
@@ -28,6 +28,7 @@ const Details = () => {
   return (
     <div>
       <StyledDiv1>
+        <TopBarDetails title={'My product name'} />
         <StyledDiv2>
           <Button isOutline>
             <Icon name="arrowBack" />
