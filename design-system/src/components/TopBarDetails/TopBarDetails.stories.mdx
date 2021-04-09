@@ -1,0 +1,32 @@
+
+import { Meta, Canvas, Story } from '@storybook/addon-docs/blocks';
+import { config } from "storybook-addon-designs";
+
+import TopBarDetails from ".";
+
+<Meta title="Components/TopBarDetails" />
+
+## TopBarDetails
+
+TODO: add component description
+
+<Canvas>
+  <Story
+      name="Default"
+      parameters={{
+          // Configuration for design plugin, which allows to display linked Figma frame
+          design: config({
+              type: "figma",
+              // replace this url with your own design file to link:
+              url: "https://www.figma.com/file/KnHAhqIZXLy9EcZ0DrRYvY/Workshop-design-file-PY-Jey-Aurore?node-id=113%3A3445",
+          }),
+      }}
+      args={{title: "My test title"}}
+  >
+    {args => (
+      <div style={{ width: 375, margin: '0 auto' }}>
+          <TopBarDetails {...args} />
+      </div>
+    )}
+  </Story>
+</Canvas>
