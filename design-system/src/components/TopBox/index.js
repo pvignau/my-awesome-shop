@@ -1,7 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
-import { StyledAvatar } from "../Avatar";
+import Avatar from "../Avatar";
 import Button from "../Button";
 import Icon from "../Icon";
 
@@ -9,16 +9,16 @@ import Icon from "../Icon";
  *
  * TODO: add component description
  */
-const TopBox = ({ title, ...props }) => {
+const TopBox = ({ title, avatarSrc, avatarAlt}) => {
   return <StyledTopBox>
     <div style={{ marginBottom: 40, display: 'flex', justifyContent: 'space-between' }}>
-      <StyledAvatar />
+      <Avatar imageSrc={avatarSrc} alt={avatarAlt} />
       <Button label={ <Icon name={'menu'} />} isOutline={ true }/>
     </div>
     <h1>{ title ? title : "Test title" }</h1>
   </StyledTopBox>;
 };
 
-export const StyledTopBox = styled.div``;
+const StyledTopBox = styled.div``;
 
 export default TopBox;
