@@ -4,7 +4,7 @@
  */
 import React from "react";
 import styled from "styled-components";
-import { Button, Icon } from "design-system";
+import {Button, Icon, TopBarDetails} from "design-system";
 
 import cardImg from "../assets/Card.svg";
 
@@ -91,17 +91,7 @@ const Checkout = () => {
   return (
     <div>
       <StyledDiv1>
-        <StyledDiv2>
-          <Button isIcon color="#fff">
-            <Icon name="arrowBack" />
-          </Button>
-          <StyledDiv3>
-            <h4>Card</h4>
-          </StyledDiv3>
-          <Button isIcon color="#fff">
-            <Icon name="settings" />
-          </Button>
-        </StyledDiv2>
+        <TopBarDetails title={'Card'} />
         <Styledh2>Payment Method</Styledh2>
         <img src={cardImg} alt="card" />
         <StyledUl>
