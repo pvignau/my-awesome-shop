@@ -1,16 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Fri, 09 Apr 2021 09:33:17 GMT
+ * Generated on Fri, 09 Apr 2021 10:53:49 GMT
  */
 
 export const headline1FontSize = "36px";
 export const headline1TextDecoration = "none";
-export const headline1FontFamily = "DM Sans";
-export const headline1FontWeight = 700;
+export const headline1FontFamily = "Abril Fatface";
+export const headline1FontWeight = 400;
 export const headline1FontStyle = "normal";
 export const headline1FontStretch = "normal";
-export const headline1FontStyleOld = "Bold";
-export const headline1LetterSpacing = "-1.6px";
+export const headline1FontStyleOld = "Regular";
+export const headline1LetterSpacing = "0.8px";
 export const headline1LineHeight = "46px";
 export const headline1ParagraphIndent = "0px";
 export const headline1ParagraphSpacing = "0px";

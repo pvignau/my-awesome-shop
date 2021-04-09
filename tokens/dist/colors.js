@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 09 Apr 2021 09:33:17 GMT
+ * Generated on Fri, 09 Apr 2021 10:53:49 GMT
  */
 
 export const primaryOrange100 = "rgba(241, 82, 35, 1)";
@@ -15,6 +15,12 @@ export const primaryPurple60 = "rgba(150, 141, 205, 1)";
 export const primaryPurple40 = "rgba(185, 179, 221, 1)";
 export const primaryPurple20 = "rgba(220, 217, 238, 1)";
 export const primaryPurple10 = "rgba(237, 236, 246, 1)";
+export const primaryGreen100 = "rgba(98, 197, 175, 1)";
+export const primaryGreen80 = "rgba(98, 197, 175, 0.8)";
+export const primaryGreen60 = "rgba(98, 197, 175, 0.6)";
+export const primaryGreen40 = "rgba(98, 197, 175, 0.4)";
+export const primaryGreen20 = "rgba(98, 197, 175, 0.2)";
+export const primaryGreen10 = "rgba(98, 197, 175, 0.1)";
 export const secondaryBlack100 = "rgba(4, 4, 21, 1)";
 export const secondaryBlack80 = "rgba(4, 4, 21, 0.8)";
 export const secondaryBlack60 = "rgba(4, 4, 21, 0.6)";
